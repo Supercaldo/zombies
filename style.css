@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background: url("./assets/Cover-2.jpg");
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  gap: 12px;
+  margin-top: 80px;
+}
+#canvas {
+  background-color: rgb(255, 255, 255);
+  background-image: url("./assets/EscenarioFinal.png");
+  width: 1027px;
+  height: 769px;
+}
+
+.name {
+  font-size: 36px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: blanchedalmond;
+}
+
+.MenuButton {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#fa2707, #ff0000);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  height: 75px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 32px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 150ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.MenuButton:hover {
+  box-shadow: rgba(255, 0, 0, 0.986) 0 2px 8px;
+}
+
+.MenuButton:active {
+  outline: 0;
+}
+
+.MenuButton:focus {
+  box-shadow: rgba(255, 1, 1, 0.81) 0 0 0 3px;
+}
+
+@media (max-width: 420px) {
+  .MenuButton {
+    height: 48px;
+  }
+}
+
+.endMenu {
+  display: none;
+}
+
+.cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
